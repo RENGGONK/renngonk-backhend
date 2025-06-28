@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: renggonk-cs-ai
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: GROQ_API_KEY
+        value: your_groq_api_key_here
